@@ -1,0 +1,47 @@
+{
+    "author": {
+        "name": "Golyshev Dmitrii",
+        "email": "golyshev.dmitry@yandex.ru"
+    },
+    "bugs": {
+        "url": "https://github.com/golyshevd/attach-parser/issues"
+    },
+    "contributors": [
+        "Golyshev Dmitrii <golyshev.dmitry@yandex.ru>"
+    ],
+    "dependencies": {
+        "lodash-node": "2.4.1",
+        "dicer": "0.2.3",
+        "vow": "0.4.4",
+        "inherit": "2.2.2"
+    },
+    "description": "http-body stream (req) parsing like a boss",
+    "devDependencies": {
+        "jscs": "1.5.1",
+        "eslint": "0.6.2",
+        "nodeunit": "0.9.0",
+        "istanbul": "0.2.11",
+        "asker": "0.4.5",
+        "glob": "4.0.2",
+        "media-typer": "0.2.0"
+    },
+    "license": "MIT",
+    "main": "attach-parser",
+    "name": "attach-parser",
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/golyshevd/attach-parser.git"
+    },
+    "scripts": {
+        "jscs": "jscs .",
+        "eslint": "eslint .",
+        "lint": "npm run jscs && npm run eslint",
+        "unit": "node --harmony test/runner",
+        "test": "npm run lint && npm run unit",
+        "cover": "istanbul cover test/runner"
+    },
+    "engines": {
+        "node": ">= 0.10.0"
+    },
+    "version": "0.0.1"
+}
